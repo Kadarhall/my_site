@@ -61,6 +61,39 @@ var main = function() {
   		$('.train').addClass('active-slide');
   	});
 
+
+};
+
+var slider = function() {
+	$('.arrow').click(function() {
+		// $('.row').animate({
+		// 	left: '0px'
+		// }, 1000);
+
+		$('.slider').animate({
+			left: '100%'
+		}, 1000);
+
+		$('.icon-close').animate({
+			left: '50px'
+		}, 1000);
+
+		$('.status').animate({
+			left: '0'
+		}, 1000);
+	});
+
+	$('.icon-close').click(function() {
+		$('.slider').animate({
+			left: '0'
+		}, 1000);
+
+		$(this).animate({
+			left: '-100px'
+		}, 1000);
+	});
 };
 
 $(document).ready(main);
+
+$(document).ready(slider);
