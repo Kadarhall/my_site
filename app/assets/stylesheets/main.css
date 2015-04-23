@@ -104,12 +104,12 @@ body {
 }
 
 .icon-close-left {
-  position: absolute;
+  position: fixed;
   left: -100px;
 }
 
 .icon-close-right {
-  position: absolute;
+  position: fixed;
   right: -100px;
 }
 

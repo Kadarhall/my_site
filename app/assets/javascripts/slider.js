@@ -111,6 +111,41 @@ var main = function() {
 
 var slider = function() {
 
+	$('.arrow-left').click(function() {
+		// $('.row').animate({
+		// 	left: '0px'
+		// }, 1000);
+
+		// $('.slider').slideToggle('left', 1000);
+
+		$('.slider').animate({
+			right: '100%'
+		}, 1000);
+
+		$('.icon-close-right').animate({
+			right: '50px'
+		}, 1000);
+
+		$('.status').animate({
+			right: '0'
+		}, 1000);
+	});
+
+	$('.icon-close-right').click(function() {
+		$('.slider').animate({
+			right: '0'
+		}, 1000);
+
+		$(this).animate({
+			right: '-100px'
+		}, 1000);
+
+		$('.status').animate({
+			right: '-100%'
+		}, 1000);
+	});
+
+
 	$('.arrow-right').click(function() {
 		// $('.row').animate({
 		// 	left: '0px'
@@ -143,37 +178,7 @@ var slider = function() {
 		}, 1000);
 	});
 
-	$('.arrow-left').click(function() {
-		// $('.row').animate({
-		// 	left: '0px'
-		// }, 1000);
 
-		$('.slider').animate({
-			right: '100%'
-		}, 1000);
-
-		$('.icon-close-right').animate({
-			right: '50px'
-		}, 1000);
-
-		$('.status').animate({
-			right: '0'
-		}, 1000);
-	});
-
-	$('.icon-close-right').click(function() {
-		$('.slider').animate({
-			right: '0'
-		}, 1000);
-
-		$(this).animate({
-			right: '-100px'
-		}, 1000);
-
-		$('.status').animate({
-			right: '-100%'
-		}, 1000);
-	});
 
 	// $('.name').click(function() {
 	// 	$('.slide').animate({
