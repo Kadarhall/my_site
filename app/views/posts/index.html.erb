@@ -12,6 +12,8 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
+    <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
+
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
@@ -20,6 +22,7 @@
 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
+<link href="css/hover.css" rel="stylesheet" media="all">
 
 
 </head>
@@ -39,20 +42,42 @@
     </div>
   </div>
 
+
+  <div class='color'>
+    <div class='wheel'>
+    </div>
+  </div>
+
   <div class='status'>
+    <div class='container'>
+      <form>
+        <div class='form-group'>
+          <textarea class='form-control status-box' rows='2' placeholder="What's on your mind"></textarea>
+        </div>
+      </form>
+      <div class="button-group pull-right">
+        <p class='counter'>140</p>
+        <a href='#' class='btn btn-primary'>Post</a>
+      </div>
+
+      <ol class='posts'>
+      </ol>
+
+    </div>
   </div>
 
   <div class='slider'>
 
-
+    <canvas id="myCanvas">Kadar</canvas>
 
     <div class='slide boat active-slide'>
       <div class="container">
         <div class='row'>
           <div class='col-xs-12'>
-          <h1>Kadar Hall</h1>
+          <h1 class='name'>Kadar Hall</h1>
           <p>Full Stack Developer</p>
-          <a href="#" class="arrow">Learn More</a>
+          <a href="#" class="arrow-left hvr-pulse"><i class="fa fa-arrow-left"></i></a><br>
+          <a href="#" class="arrow-right hvr-pulse"><i class="fa fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -88,7 +113,11 @@
 
   </div>
 
-      <div class="icon-close">
+      <div class="icon-close-left">
+        <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
+      </div>
+
+      <div class="icon-close-right">
         <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
       </div>
 
@@ -158,6 +187,7 @@
 	  </div>
 	</div>
 
+    <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script>
 
 
   </body>

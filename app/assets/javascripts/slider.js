@@ -61,11 +61,57 @@ var main = function() {
   		$('.train').addClass('active-slide');
   	});
 
+  $('.btn').click(function() {
+    var post = $('.status-box').val();
+    $('<li>').text(post).appendTo('.posts');
+    $('.status-box').val('');
+    $('.counter').text('140');
+    $('.btn').addClass('disabled'); 
+  });
+  
+  $('.status-box').keyup(function() {
+    var postLength = $(this).val().length;
+    var charactersLeft = 140 - postLength;
+    $('.counter').text(charactersLeft);
+  
+    if(charactersLeft < 0) {
+      $('.btn').addClass('disabled'); 
+    }
+    else if(charactersLeft == 140) {
+      $('.btn').addClass('disabled');
+    }
+    else {
+      $('.btn').removeClass('disabled');
+    }
+  });
+  
+  $('.btn').addClass('disabled');
 
+  	var red = [0, 100, 63];
+	var orange = [40, 100, 60];
+	var green = [75, 100, 40];
+	var blue = [196, 77, 55];
+	var purple = [280, 50, 60];
+
+	var myName = "Kadar";
+	var letterColors = [red,orange,green,blue,purple];
+	if (myName.length > 4) {
+	    bubbleShape = "circle";
+	} else {
+	    bubbleShape = "square";
+	}
+
+
+	drawName(myName, letterColors);
+
+	bounceName();
+
+	bounceBubbles();
 };
 
 var slider = function() {
-	$('.arrow').click(function() {
+
+	$('.arrow-right').click(function() {
 		// $('.row').animate({
 		// 	left: '0px'
 		// }, 1000);
@@ -74,16 +120,16 @@ var slider = function() {
 			left: '100%'
 		}, 1000);
 
-		$('.icon-close').animate({
+		$('.icon-close-left').animate({
 			left: '50px'
 		}, 1000);
 
-		$('.status').animate({
+		$('.color').animate({
 			left: '0'
 		}, 1000);
 	});
 
-	$('.icon-close').click(function() {
+	$('.icon-close-left').click(function() {
 		$('.slider').animate({
 			left: '0'
 		}, 1000);
@@ -91,7 +137,55 @@ var slider = function() {
 		$(this).animate({
 			left: '-100px'
 		}, 1000);
+
+		$('.color').animate({
+			left: '-100%'
+		}, 1000);
 	});
+
+	$('.arrow-left').click(function() {
+		// $('.row').animate({
+		// 	left: '0px'
+		// }, 1000);
+
+		$('.slider').animate({
+			right: '100%'
+		}, 1000);
+
+		$('.icon-close-right').animate({
+			right: '50px'
+		}, 1000);
+
+		$('.status').animate({
+			right: '0'
+		}, 1000);
+	});
+
+	$('.icon-close-right').click(function() {
+		$('.slider').animate({
+			right: '0'
+		}, 1000);
+
+		$(this).animate({
+			right: '-100px'
+		}, 1000);
+
+		$('.status').animate({
+			right: '-100%'
+		}, 1000);
+	});
+
+	// $('.name').click(function() {
+	// 	$('.slide').animate({
+	// 		height: '0px'
+	// 	}, 1000);
+	// });
+
+	$('.name').click(function() {
+		$('.slide').slideUp(1000);
+	});
+
+
 };
 
 $(document).ready(main);
