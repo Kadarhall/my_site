@@ -6,5 +6,5 @@ $( document ).on( "mousemove", function( event ) {
     var $pageY = parseInt(event.pageY / $height,10);
   $( ".color" ).text( "pageX: " + $pageX + ", pageY: " + $pageY );
   $(".color").css("background-color", "rgb("+$pageX+","+$pageY+","+$pageX+")");
-  // $(".color").css("background", 'url('bike-wheel.png')');
+  $(".color").css("background", 'url('bike-wheel.png')');
 });

@@ -9,10 +9,10 @@ body {
 }*/
 
 .nav {
-  background-color: #dbdbdb;
+  background-color: #24251F;
   position: relative;
   height: 50px;
-  opacity: 0.5;
+  color: #B6BCC7;
 }
 
 .nav a {
@@ -29,6 +29,7 @@ body {
 
 #myCanvas {
   position: relative;
+  display: none;
 }
 
 .slider {

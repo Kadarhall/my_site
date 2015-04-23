@@ -192,6 +192,7 @@ var slider = function() {
 
 	$('.name').click(function() {
 		$('.slide').slideUp(1000);
+		$('#myCanvas').css('display','block');
 	});
 
 
