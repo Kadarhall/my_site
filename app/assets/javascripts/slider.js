@@ -107,6 +107,10 @@ var main = function() {
 	bounceName();
 
 	bounceBubbles();
+
+	$('.fa-rocket').mouseover(function() {
+		$(this).css('color', 'red').fadeIn(1000);
+	});
 };
 
 var slider = function() {
