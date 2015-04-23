@@ -1,3 +1,11 @@
+body {
+  height: 100%;
+}
+
+/*.container {
+  width: 960px;
+}*/
+
 .nav a {
   color: #5a5a5a;
   font-size: 11px;
@@ -10,7 +18,112 @@
   display: inline;
 }
 
-.jumbotron {
+.slider {
+  position: relative;
+  width: 100%;
+  height: 470px;
+  border-bottom: 1px solid #ddd;
+}
+
+.slide {
+  background: transparent url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/feature-gradient-transparent.png') center center no-repeat;
+  background-size: cover;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.active-slide {
+  display: block;
+}
+
+.boat {
+  background: url('https://download.unsplash.com/reserve/xWcqazwvSXadCA7dZLiQ_Ship_mast.jpg')  no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.city {
+  background: url('https://download.unsplash.com/uploads/1413259835094dcdeb9d3/6e609595')  no-repeat;
+  background-size: cover;
+/*  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;*/
+}
+
+.bridge {
+  background: url('https://download.unsplash.com/photo-1428342319217-5fdaf6d7898e')  no-repeat;
+  background-size: cover;
+
+}
+
+.train {
+  background: url('https://download.unsplash.com/photo-1423882503395-8571951e45cc')  no-repeat;
+  background-size: cover;
+
+}
+
+.slider-nav {
+  text-align: center;
+  margin-top: 20px;
+/*  position: relative;
+  bottom: 0;*/
+  margin-bottom: 20px
+}
+
+.arrow-prev {
+  margin-right: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+  font-size: 40px;
+}
+
+.arrow-next {
+  margin-left: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+  font-size: 40px;
+}
+
+.slider-dots {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+
+}
+
+.slider-dots li {
+  color: #bbbcbc;
+  display: inline;
+  font-size: 40px;
+  margin-right: 5px;
+  padding: 10px
+}
+
+.slider-dots a:hover {
+  text-decoration: none;
+}
+
+.slider-dots a {
+  text-decoration: none;
+}
+
+.slider-dots li.active-dot {
+  color: #363636;
+}
+
+/*.jumbotron {
   background-image:url('https://download.unsplash.com/reserve/xWcqazwvSXadCA7dZLiQ_Ship_mast.jpg');
   height: 500px;
   background-repeat: no-repeat;
@@ -32,7 +145,7 @@
 .jumbotron p {
   font-size: 20px;
   color: #fff;
-}
+}*/
 
 .learn-more {
   background-color: #f7f7f7;
