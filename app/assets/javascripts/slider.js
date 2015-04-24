@@ -1,5 +1,8 @@
 var main = function() {
 
+	$('.slide').first().addClass('active-slide');
+
+
 	$('.arrow-next').click( function() {
 		var currentSlide = $('.active-slide');
 		var nextSlide = currentSlide.next();
@@ -20,6 +23,12 @@ var main = function() {
 
 		currentDot.removeClass('active-dot');
 		nextDot.addClass('active-dot');
+
+		// $('.active-slide').each(function() {
+		// 	$(this).fadeOut(1000).removeClass('active-slide');
+		// 	$(this).next().fadeIn(1000).addClass('active-slide');
+
+		// });
 	});
 
 	$('.arrow-prev').click(function() {
@@ -40,6 +49,7 @@ var main = function() {
 	    currentDot.removeClass('active-dot');
 	    prevDot.addClass('active-dot');
   	});
+
 
   	$('.first').click(function() {
   		$('.slide').removeClass('active-slide');
