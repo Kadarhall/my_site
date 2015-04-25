@@ -125,6 +125,7 @@ var main = function() {
 
 var slider = function() {
 
+
 	$('.arrow-left').click(function() {
 		// $('.row').animate({
 		// 	left: '0px'
@@ -143,6 +144,8 @@ var slider = function() {
 		$('.status').animate({
 			right: '0'
 		}, 1000);
+
+		$('body').css('position','fixed');
 	});
 
 	$('.icon-close-right').click(function() {
@@ -157,6 +160,8 @@ var slider = function() {
 		$('.status').animate({
 			right: '-100%'
 		}, 1000);
+
+		$('body').css('position','absolute');
 	});
 
 
@@ -176,6 +181,8 @@ var slider = function() {
 		$('.color').animate({
 			left: '0'
 		}, 1000);
+
+		$('body').css('position','fixed');
 	});
 
 	$('.icon-close-left').click(function() {
@@ -190,6 +197,8 @@ var slider = function() {
 		$('.color').animate({
 			left: '-100%'
 		}, 1000);
+
+		$('body').css('position','absolute');
 	});
 
 
