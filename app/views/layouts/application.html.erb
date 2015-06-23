@@ -29,9 +29,28 @@
 
 <body>
 
-
+  <div class="nav nav-pills">
+    <div class="container">
+      <ul class="pull-left">
+        <li><i class="fa fa-home"></i><a href="/">Home</a></li>
+        <li><i class="fa fa-briefcase"></i><a href="/portfolio">Portfolio</a></li>
+        <li><i class="fa fa-user"></i><a href="/about">About</a></li>
+        <li><i class="fa fa-medium"></i><a href="https://medium.com/@kadarhall">Blog</a></li>
+      </ul>
+      <ul class="pull-right">
+        <li><i class="fa fa-github-alt"></i><a href="https://github.com/Kadarhall">Github</a></li>
+        <li><i class="fa fa-twitter"></i><a href="https://twitter.com/Kadarmor">Twitter</a></li>
+        <li><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/kadarhall">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
 
 <%= yield %>
+
+  <div class="copyright">
+  <i class="fa fa-copyright"></i> Kadar Hall 2015
+  </div>
+
 
 </body>
 </html>

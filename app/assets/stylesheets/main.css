@@ -17,6 +17,12 @@ body {
   font-size: 2em;
 }
 
+.nav button {
+  border: none;
+  font-size: 2em;
+  margin-right: 1em;
+}
+
 .nav a {
   color: #5a5a5a;
   font-size: 11px;
@@ -71,12 +77,14 @@ body {
   font-size: 48px;  
   font-family: 'Shift', sans-serif;
   font-weight: bold;
-  padding-top: 10px;
+  padding-top: 100px;
+  opacity: 0.7;
 }
 
 .boat p {
   font-size: 20px;
   color: #fff;
+  opacity: 0.7;
 }
 
 .city {
