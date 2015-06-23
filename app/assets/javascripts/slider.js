@@ -38,7 +38,7 @@ var main = function() {
 	    var currentDot = $('.active-dot');
 	    var prevDot = currentDot.prev();
 
-	    if(prevSlide.length === 0) {
+	    if (prevSlide.length === 0) {
 	      prevSlide = $('.slide').last();
 	      prevDot = $('.dot').last();
 	    };

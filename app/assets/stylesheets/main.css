@@ -2,6 +2,7 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
+  font-family: Roboto;
 }
 
 /*.container {
@@ -11,8 +12,9 @@ body {
 .nav {
   background-color: #24251F;
   position: relative;
-  height: 50px;
+  height: 70px;
   color: #B6BCC7;
+  font-size: 2em;
 }
 
 .nav a {
@@ -28,14 +30,15 @@ body {
 }
 
 #myCanvas {
-  position: relative;
+  position: absolute;
   display: none;
+  height: 80%;
 }
 
 .slider {
   position: relative;
   width: 100%;
-  height: 470px;
+  height: 100%;
   border-bottom: 1px solid #dbdbdb;
 }
 
@@ -68,6 +71,7 @@ body {
   font-size: 48px;  
   font-family: 'Shift', sans-serif;
   font-weight: bold;
+  padding-top: 10px;
 }
 
 .boat p {
@@ -221,4 +225,8 @@ body {
 .neighborhood-guides p {
     font-size: 15px;
     margin-bottom: 13px;
+}
+
+.copyright {
+  text-align: right;
 }
