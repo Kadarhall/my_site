@@ -34,7 +34,7 @@
 }
 
 .posts li {
-  background-color: #fff;
+ /* background-color: #fff;*/
   padding-bottom: 2px;
   padding-left: 5px;
   border-radius: 10px;
@@ -49,5 +49,5 @@
 }
 
 .posts p {
-  background-color: #fff;
+ /* background-color: #fff;*/
 }
