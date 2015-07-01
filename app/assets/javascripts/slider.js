@@ -217,6 +217,10 @@ var slider = function() {
 
 };
 
+$(document).ready(function() {
+  $('#simple-menu').sidr();
+});
+
 $(document).ready(main);
 
 $(document).ready(slider);
