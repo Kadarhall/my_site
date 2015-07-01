@@ -16,7 +16,7 @@
 	margin-left: 40px;
 }
 
-@media all (max-width: 500px) {
+@media all and (max-width: 500px) {
 	#simple-menu {
 		display: block;
 	}
