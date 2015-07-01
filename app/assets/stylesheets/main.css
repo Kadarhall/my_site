@@ -59,7 +59,7 @@ body {
 }
 
 .boat {
-  background: url('https://download.unsplash.com/reserve/xWcqazwvSXadCA7dZLiQ_Ship_mast.jpg')  no-repeat;
+  background: url('boat.jpg')  no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
