@@ -14,6 +14,7 @@
 
 .sidr a {
 	margin-left: 40px;
+	font-size: 60px;
 }
 
 @media screen and (max-width: 768px) {
@@ -34,6 +35,41 @@
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
+  #simple-menu {
+		display: block;
+	}
+
+	.pull-left {
+		display: none;
+	}
+
+	.pull-right {
+		display: none;
+	}
+}
+
+
+/* ----------- Galaxy S5 ----------- */
+
+/* Portrait and Landscape */
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  #simple-menu {
+		display: block;
+	}
+
+	.pull-left {
+		display: none;
+	}
+
+	.pull-right {
+		display: none;
+	}
+}
+
+
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   #simple-menu {
 		display: block;
 	}
