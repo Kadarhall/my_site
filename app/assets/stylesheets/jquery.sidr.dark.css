@@ -16,7 +16,7 @@
 	margin-left: 40px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
 	#simple-menu {
 		display: block;
 	}
