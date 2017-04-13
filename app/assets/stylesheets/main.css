@@ -59,7 +59,7 @@ body {
 }
 
 .boat {
-  background: url('https://download.unsplash.com/reserve/xWcqazwvSXadCA7dZLiQ_Ship_mast.jpg')  no-repeat;
+  background: url('boat.jpg')  no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -69,7 +69,7 @@ body {
 
 .boat h1 {
   color: #fff;
-  font-size: 48px;  
+  font-size: 48px;
   font-family: 'Shift', sans-serif;
   font-weight: bold;
   padding-top: 100px;
@@ -189,7 +189,7 @@ body {
 
 .jumbotron h1 {
   color: #fff;
-  font-size: 48px;  
+  font-size: 48px;
   font-family: 'Shift', sans-serif;
   font-weight: bold;
 }
